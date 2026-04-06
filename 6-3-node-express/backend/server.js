@@ -1,5 +1,6 @@
 // TODO 1: Import and Create express app instance
 import express from "express";
+import cors from "cors";
 
 const app = express();
 
@@ -8,6 +9,7 @@ const PORT = 3000;
 
 
 // TODO 4: Import and Apply CORS middleware
+app.use(cors());
 
 
 // TODO 5: Import and apply Morgan middleware
